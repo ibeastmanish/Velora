@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  /* Velora V2 Palette */
+  --color-surface-base: #F9F7F2; /* Creamy bone/sand */
+  --color-surface-raised: #FFFFFF;
+  --color-surface-elevated: #FFFDF9;
+  --color-surface-sunken: #F2EFE9;
+
+  --color-accent-rose: #D4A3A3;
+  --color-accent-clay: #C47F6B;
+  --color-accent-sage: #8DA399;
+  --color-accent-gold: #D4B16A;
+  --color-accent-teal: #6B8D8D;
+
+  --color-text-primary: #3D3D3D; /* Deep warm grey */
+  --color-text-secondary: #706F6C;
+  --color-text-tertiary: #A6A4A0;
+}
+
+@layer base {
+  body {
+    @apply bg-surface-base text-text-primary antialiased;
+    font-weight: 300;
+    letter-spacing: 0.01em;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3 {
+    @apply font-serif font-medium;
+    letter-spacing: -0.01em;
+  }
+
+  input::placeholder {
+    @apply text-text-tertiary;
+  }
+}
+
+@layer components {
+  .btn-soft {
+    @apply px-6 py-3 rounded-full transition-all duration-500 ease-out active:scale-95;
+  }
+  
+  .glass-light {
+    @apply bg-white/40 backdrop-blur-xl border border-white/20 shadow-sm;
+  }
+}
+

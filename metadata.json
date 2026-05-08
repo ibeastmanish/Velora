@@ -1,0 +1,13 @@
+{
+  "name": "Velora",
+  "description": "Velora V2: The Creative Odyssey. A premium AI travel planner featuring a soft, artisanal redesign with organic aesthetics, elegant typography, and imaginative narratives that evoke the joy of exploration.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "AI Trip Planning",
+    "Google Maps Integration",
+    "Collaborative Planning",
+    "Gamified Passport"
+  ]
+}
